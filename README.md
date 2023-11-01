@@ -1,2 +1,2 @@
-# svelte-ogp
-Quick OGP configuration for SvelteKit
+<!----- BEGIN GHOST DOCS HEADER ----->
+<!----- END GHOST DOCS HEADER ----->
