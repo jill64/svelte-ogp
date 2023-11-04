@@ -135,22 +135,19 @@ This allows for the following notations
       locale: [
         en_GB,
         {
-          alternate: [
-            "fr_FR",
-            "es_ES"
-          ]
+          alternate: ['fr_FR', 'es_ES']
         }
       ],
       image: [
         {
-          "": "https://example.com/image.jpg",
-          width: "300",
-          height: "400"
+          '': 'https://example.com/image.jpg',
+          width: '300',
+          height: '400'
         },
-        "https://example.com/image-2.jpg",
+        'https://example.com/image-2.jpg',
         {
-          "": "https://example.com/image-3.jpg",
-          height: "1000"
+          '': 'https://example.com/image-3.jpg',
+          height: '1000'
         }
       ]
     }
