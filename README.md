@@ -1,4 +1,17 @@
 <!----- BEGIN GHOST DOCS HEADER ----->
+
+# svelte-ogp
+
+[![npm-version](https://img.shields.io/npm/v/@jill64/svelte-ogp)](https://npmjs.com/package/@jill64/svelte-ogp) [![npm-license](https://img.shields.io/npm/l/@jill64/svelte-ogp)](https://npmjs.com/package/@jill64/svelte-ogp) [![npm-download-month](https://img.shields.io/npm/dm/@jill64/svelte-ogp)](https://npmjs.com/package/@jill64/svelte-ogp) [![npm-min-size](https://img.shields.io/bundlephobia/min/@jill64/svelte-ogp)](https://npmjs.com/package/@jill64/svelte-ogp) [![ci.yml](https://github.com/jill64/svelte-ogp/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-ogp/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/svelte-ogp/graph/badge.svg)](https://codecov.io/gh/jill64/svelte-ogp)
+
+🖼️ Quick OGP configuration for SvelteKit
+
+## Install
+
+```sh
+npm i @jill64/svelte-ogp
+```
+
 <!----- END GHOST DOCS HEADER ----->
 
 It provides serval typed properties and default values according to [The Open Graph protocol](https://ogp.me) and [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started).
