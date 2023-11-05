@@ -63,6 +63,6 @@
     "vitest": "0.34.6"
   },
   "dependencies": {
-    "@jill64/svelte-html": "0.2.0"
+    "@jill64/svelte-html": "0.2.1"
   }
 }
