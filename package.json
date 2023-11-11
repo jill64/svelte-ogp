@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-ogp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "🖼️ Quick OGP configuration for SvelteKit",
   "main": "dist/index.js",
   "type": "module",
@@ -64,6 +64,6 @@
     "vitest": "0.34.6"
   },
   "dependencies": {
-    "@jill64/svelte-html": "0.3.0"
+    "@jill64/svelte-html": "1.0.0"
   }
 }
