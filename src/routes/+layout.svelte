@@ -6,7 +6,7 @@
   title="Title | Site-Name"
   site_name="Site-Name"
   description="Description"
-  image="https://example.com/og-image.png"
+  image="/og-image.png"
 />
 <slot />
 

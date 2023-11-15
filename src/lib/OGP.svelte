@@ -76,8 +76,8 @@
     og: {
       title,
       type,
-      image,
-      url: url ?? $page.url.href,
+      image: (image.startsWith('/') ? $page.url.origin : '') + image,
+      url: url || $page.url.href,
       description,
       site_name,
       ...custom_properties.og
