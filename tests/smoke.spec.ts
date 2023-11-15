@@ -35,7 +35,7 @@ test('smoke', async ({ page }) => {
 
   expect(
     await page.locator('meta[property="og:image"]').getAttribute('content')
-  ).toBe('https://example.com/og-image.png')
+  ).toBe('http://localhost:4173/og-image.png')
 
   await page.goto('/test')
 
