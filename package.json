@@ -48,7 +48,7 @@
     "svelte": "^4.0.0"
   },
   "devDependencies": {
-    "@jill64/sentry-sveltekit-cloudflare": "1.0.0",
+    "@jill64/sentry-sveltekit-cloudflare": "1.2.0",
     "@playwright/test": "1.39.0",
     "@sveltejs/adapter-cloudflare": "2.3.3",
     "@sveltejs/kit": "1.27.6",
