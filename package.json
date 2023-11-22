@@ -28,8 +28,9 @@
     "access": "public"
   },
   "keywords": [
+    "og-image",
     "ogp",
-    "svelte"
+    "sveltekit"
   ],
   "scripts": {
     "dev": "vite dev",
