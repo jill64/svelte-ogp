@@ -6,6 +6,8 @@
 
 🖼️ Quick OGP configuration for SvelteKit
 
+## [Demo](https://svelte-ogp.jill64.dev)
+
 ## Installation
 
 ```sh
