@@ -11,8 +11,8 @@ dependencies:
 
 devDependencies:
   '@jill64/sentry-sveltekit-cloudflare':
-    specifier: 1.4.0
-    version: 1.4.0(@sveltejs/kit@1.27.6)
+    specifier: 1.4.1
+    version: 1.4.1(@sveltejs/kit@1.27.6)
   '@playwright/test':
     specifier: 1.40.1
     version: 1.40.1
@@ -680,10 +680,10 @@ packages:
       '@sinclair/typebox': 0.27.8
     dev: true
 
-  /@jill64/sentry-sveltekit-cloudflare@1.4.0(@sveltejs/kit@1.27.6):
+  /@jill64/sentry-sveltekit-cloudflare@1.4.1(@sveltejs/kit@1.27.6):
     resolution:
       {
-        integrity: sha512-4FPF6pIrsM9FhT3MqDu3NUFd8VHaQrGNZJ4syKBMcdj/QA+gUXtUGgSLwSQBTMi0T1gX0VVP3w7LHuOua7uw9g==
+        integrity: sha512-G2a/DEDJ4JfznwPRT4FiNnsje75xQ6CSLe2fWimoJd0v7BhBziEZg2urn4tlHJnS2tchZpOsdk2vbmTqTVND7A==
       }
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
