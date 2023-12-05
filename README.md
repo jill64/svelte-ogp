@@ -8,12 +8,6 @@
 
 ## [Demo](https://svelte-ogp.jill64.dev)
 
-## Installation
-
-```sh
-npm i @jill64/svelte-ogp
-```
-
 <!----- END GHOST DOCS HEADER ----->
 
 It provides serval typed properties and default values according to [The Open Graph protocol](https://ogp.me) and [Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started).
