@@ -59,7 +59,7 @@
     "svelte": "4.2.8",
     "typescript": "5.3.3",
     "vite": "5.0.6",
-    "vitest": "1.0.1"
+    "vitest": "1.0.2"
   },
   "dependencies": {
     "@jill64/svelte-html": "1.0.0"
