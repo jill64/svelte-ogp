@@ -11,13 +11,15 @@ test('smoke', async ({ page }) => {
     'og: https://ogp.me/ns#'
   )
 
+  const { origin } = new URL(page.url())
+
   expect(
     await page.locator('meta[property="og:type"]').getAttribute('content')
   ).toBe('website')
 
   expect(
     await page.locator('meta[property="og:url"]').getAttribute('content')
-  ).toBe('http://localhost:4173/')
+  ).toBe(`${origin}/`)
 
   expect(
     await page.locator('meta[property="og:title"]').getAttribute('content')
@@ -35,7 +37,7 @@ test('smoke', async ({ page }) => {
 
   expect(
     await page.locator('meta[property="og:image"]').getAttribute('content')
-  ).toBe('http://localhost:4173/og-image.png')
+  ).toBe(`${origin}/og-image.png`)
 
   await page.goto('/test')
 
@@ -45,5 +47,5 @@ test('smoke', async ({ page }) => {
 
   expect(
     await page.locator('meta[property="og:url"]').getAttribute('content')
-  ).toBe('http://localhost:4173/test')
+  ).toBe(`${origin}/test`)
 })
