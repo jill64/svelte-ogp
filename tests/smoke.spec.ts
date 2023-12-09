@@ -7,6 +7,8 @@ test('smoke', async ({ page }) => {
     page.getByRole('heading', { name: '@jill64/svelte-ogp' })
   ).toBeVisible()
 
+  await page.waitForTimeout(1000)
+
   expect(await page.locator('html').getAttribute('prefix')).toBe(
     'og: https://ogp.me/ns#'
   )
