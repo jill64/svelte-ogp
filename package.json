@@ -5,7 +5,12 @@
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
-  "author": "jill64 <intents.turrets0h@icloud.com> (https://github.com/jill64)",
+  "author": {
+    "name": "jill64",
+    "email": "143883742+jill64@users.noreply.github.com",
+    "url": "https://github.com/jill64",
+    "image": "https://avatars.githubusercontent.com/u/143883742?v=4"
+  },
   "bugs": "https://github.com/jill64/svelte-ogp/issues",
   "homepage": "https://github.com/jill64/svelte-ogp#readme",
   "files": [
@@ -21,7 +26,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jill64/svelte-ogp.git"
+    "url": "https://github.com/jill64/svelte-ogp.git",
+    "image": "https://opengraph.githubassets.com/9e4d4abf477175552dada6043f66c160ee10bd142711f2210a284b9208f55778/jill64/svelte-ogp"
   },
   "publishConfig": {
     "access": "public"
@@ -52,7 +58,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "1.5.0",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "2.3.4",
-    "@sveltejs/kit": "1.27.7",
+    "@sveltejs/kit": "1.28.0",
     "@jill64/eslint-config-svelte": "1.0.1",
     "@jill64/playwright-config": "2.2.0",
     "@jill64/prettier-config": "1.0.0",
