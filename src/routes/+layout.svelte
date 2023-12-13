@@ -1,23 +1,9 @@
 <script lang="ts">
-  import { OGP } from '$lib'
+  import { Layout } from '@jill64/npm-demo-layout'
+  import README from '../../README.md?raw'
+  import packageJson from '../../package.json'
 </script>
 
-<OGP
-  title="Title | Site-Name"
-  site_name="Site-Name"
-  description="Description"
-  image="/og-image.png"
-/>
-<slot />
-
-<style>
-  :global(body) {
-    font-family: sans-serif;
-  }
-  @media (prefers-color-scheme: dark) {
-    :global(body) {
-      background-color: #222;
-      color: #eee;
-    }
-  }
-</style>
+<Layout {packageJson} {README}>
+  <slot />
+</Layout>

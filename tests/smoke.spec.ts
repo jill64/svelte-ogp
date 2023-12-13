@@ -7,8 +7,6 @@ test('smoke', async ({ page }) => {
     page.getByRole('heading', { name: '@jill64/svelte-ogp' })
   ).toBeVisible()
 
-  await page.waitForTimeout(1000)
-
   expect(await page.locator('html').getAttribute('prefix')).toBe(
     'og: https://ogp.me/ns#'
   )
@@ -25,21 +23,24 @@ test('smoke', async ({ page }) => {
 
   expect(
     await page.locator('meta[property="og:title"]').getAttribute('content')
-  ).toBe('Title | Site-Name')
+  ).toBe('@jill64/svelte-ogp')
 
   expect(
     await page.locator('meta[property="og:site_name"]').getAttribute('content')
-  ).toBe('Site-Name')
+  ).toBe('@jill64/svelte-ogp')
 
   expect(
     await page
       .locator('meta[property="og:description"]')
       .getAttribute('content')
-  ).toBe('Description')
+  ).toBe('🖼️ Quick OGP configuration for SvelteKit')
 
   expect(
-    await page.locator('meta[property="og:image"]').getAttribute('content')
-  ).toBe(`${origin}/og-image.png`)
+    (
+      await page.locator('meta[property="og:image"]').getAttribute('content')
+    )?.match(/https:\/\/opengraph.githubassets.com\/(\w*)\/jill64\/svelte-ogp/)
+      ?.length
+  ).toBeTruthy()
 
   await page.goto('/test')
 

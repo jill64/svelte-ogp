@@ -5,6 +5,8 @@ on: push
 jobs:
   test:
     uses: jill64/.github/.github/workflows/run-vitest.yml@main
+    with:
+      pre-test: npm run package
   test-e2e:
     uses: jill64/playwright-config/.github/workflows/duplex-playwright.yml@3493dea571274fa5ca79ec1597d7cfff848aa916 # v2.2.0
     with:
