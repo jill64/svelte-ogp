@@ -25,7 +25,7 @@ export { attach as handle } from '@jill64/svelte-ogp'
   <head>
     <meta property="og:title" content="${name}">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="${url.origin}/og-image.ong">
+    <meta property="og:image" content="${url.origin}/og-image.png">
     <meta property="og:url" content="${url.href}">
     <meta property="og:description" content="${description}">
     <meta property="og:site_name" content="${name}">
