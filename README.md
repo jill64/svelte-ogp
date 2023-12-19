@@ -167,3 +167,11 @@ This allows for the following notations
 <meta property="og:image" content="https://example.com/image-3.jpg" />
 <meta property="og:image:height" content="1000" />
 ```
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
