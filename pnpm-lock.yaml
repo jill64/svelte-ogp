@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jill64/svelte-html':
-    specifier: 1.1.11
-    version: 1.1.11(@sveltejs/kit@2.5.5)(svelte@4.2.12)
+    specifier: 1.1.12
+    version: 1.1.12(@sveltejs/kit@2.5.5)(svelte@4.2.12)
 
 devDependencies:
   '@jill64/eslint-config-svelte':
@@ -907,6 +907,17 @@ packages:
     dependencies:
       '@sveltejs/kit': 2.5.5(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.12)(vite@5.2.8)
       svelte: 4.2.12
+    dev: true
+
+  /@jill64/svelte-html@1.1.12(@sveltejs/kit@2.5.5)(svelte@4.2.12):
+    resolution: {integrity: sha512-DWp/i/YkrCbjPvIiqLYCQPw7ABCcs6SBBPYxrfnqtUXm1I+IsxC1C3XqislZF6q10ecvlOIjo+TRUAIHSA76og==}
+    peerDependencies:
+      '@sveltejs/kit': ^2.0.0
+      svelte: ^4.0.0
+    dependencies:
+      '@sveltejs/kit': 2.5.5(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@4.2.12)(vite@5.2.8)
+      svelte: 4.2.12
+    dev: false
 
   /@jill64/svelte-menu@1.0.17(svelte@4.2.12):
     resolution: {integrity: sha512-gfEh0SaM5heXz8oCkSxKCPV6ae3Ovupf72Z1L2Ac3bxyBWuNVtGt7CzVNWgdYhPNiwGgtJeMZarUsdwpJmAAFw==}
