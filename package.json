@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-ogp",
-  "version": "1.1.25",
+  "version": "1.1.26",
   "description": "🖼️ Quick OGP configuration for SvelteKit",
   "main": "dist/index.js",
   "type": "module",
@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-ogp.git",
-    "image": "https://opengraph.githubassets.com/155da820c92bdac0bd70aac437e50dd992ea77a2890c686c2f93cd09c2983d08/jill64/svelte-ogp"
+    "image": "https://opengraph.githubassets.com/8cb39388fe7eb78757f51b72696a7e1149289fc45f39be398a2fd65060c92d4a/jill64/svelte-ogp"
   },
   "publishConfig": {
     "access": "public"
@@ -56,7 +56,7 @@
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/eslint-config-svelte": "1.2.29",
-    "@jill64/npm-demo-layout": "1.0.202",
+    "@jill64/npm-demo-layout": "1.0.203",
     "@jill64/playwright-config": "2.3.0",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.13",
