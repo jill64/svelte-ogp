@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-ogp.git",
-    "image": "https://opengraph.githubassets.com/b7f67ab9f55243475606a81beb6b36fe58e0249698bfc480798d4685fa8337c2/jill64/svelte-ogp"
+    "image": "https://opengraph.githubassets.com/d161c5061fdd2604430c086c93f3e32e59b81902793b8b43a0ff6470266dcb63/jill64/svelte-ogp"
   },
   "publishConfig": {
     "access": "public"
