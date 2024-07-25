@@ -4,7 +4,7 @@
   import { javascript, xml } from '@jill64/npm-demo-layout/highlight/languages'
   import { code } from './code'
 
-  $: sample = code($page.url)
+  let sample = $derived(code($page.url))
 </script>
 
 Open DevTools and make sure OGP is set.
