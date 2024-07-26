@@ -85,7 +85,11 @@
     og: {
       title,
       type,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       image: (image.startsWith('/') ? $page.url.origin : '') + image,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       url: url || $page.url.href,
       description,
       site_name,

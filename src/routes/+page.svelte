@@ -4,6 +4,8 @@
   import { javascript, xml } from '@jill64/npm-demo-layout/highlight/languages'
   import { code } from './code'
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   let sample = $derived(code($page.url))
 </script>
 
