@@ -45,7 +45,7 @@
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "check": "svelte-kit sync && npx svelte-check",
     "lint": "npm run check && npx eslint .",
-    "format": "npx psvx",
+    "format": "npx prettier -w .",
     "test": "vitest",
     "test:e2e": "playwright test"
   },
@@ -53,12 +53,11 @@
     "@sveltejs/kit": "^2.0.0",
     "svelte": "^5.0.0"
   },
-  "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/eslint-config-svelte": "1.3.4",
     "@jill64/npm-demo-layout": "1.0.236",
     "@jill64/playwright-config": "2.4.0",
-    "@jill64/prettier-config": "1.0.0",
+    "prettier-plugin-svelte": "3.2.6",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.16",
     "@jill64/universal-sanitizer": "1.3.0",
     "@playwright/test": "1.45.3",
