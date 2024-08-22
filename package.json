@@ -68,7 +68,7 @@
     "typescript": "5.5.4",
     "vite": "5.4.2",
     "vitest": "2.0.5",
-    "@sveltejs/vite-plugin-svelte": "3.1.1"
+    "@sveltejs/vite-plugin-svelte": "3.1.2"
   },
   "dependencies": {
     "@jill64/svelte-html": "1.1.20"
