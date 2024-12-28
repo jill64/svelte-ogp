@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-ogp.git",
-    "image": "https://opengraph.githubassets.com/3085827390294a3c0507f094e68e49f7c017eb99aa35a651d7290411fa9b9e6f/jill64/svelte-ogp"
+    "image": "https://opengraph.githubassets.com/fa8073486262342948a5f0b2bd45886e35a49a4ee76fcf1235b0ca2d64311fa3/jill64/svelte-ogp"
   },
   "publishConfig": {
     "access": "public"
@@ -60,7 +60,7 @@
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
-    "@jill64/universal-sanitizer": "1.3.5",
+    "@jill64/universal-sanitizer": "1.3.6",
     "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",
     "@sveltejs/kit": "2.15.1",
