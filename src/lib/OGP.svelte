@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { page } from '$app/stores'
   import { SvelteHTML } from '@jill64/svelte-html'
   import { store } from './store'
@@ -11,7 +11,8 @@
   // https://ogp.me/#metadata
 
   /** The title of your object as it should appear within the graph */
-  export let title: string
+  /** @type {string} */
+  export let title
 
   /**
    * The type of your object.
@@ -22,21 +23,25 @@
   export let type = 'website'
 
   /** An image URL which should represent your object within the graph. */
-  export let image: string
+  /** @type {string} */
+  export let image
 
   /**
    * The canonical URL of your object that will be used as its permanent ID in the graph.
    * @default $page.url.href
    */
-  export let url: string | undefined = undefined
+  /** @type {string | undefined} */
+  export let url = undefined
 
   // https://ogp.me/#optional
 
   /** A one to two sentence description of your object. */
-  export let description: string
+  /** @type {string} */
+  export let description
 
   /** If your object is part of a larger web site, the name which should be displayed for the overall site.  */
-  export let site_name: string
+  /** @type {string} */
+  export let site_name
 
   // Twitter Cards
   // https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
@@ -45,27 +50,28 @@
    * The card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
    * @default 'summary_large_image'
    */
-  export let twitter_card:
-    | 'summary'
-    | 'summary_large_image'
-    | 'app'
-    | 'player' = 'summary_large_image'
+  /** @type {'summary' | 'summary_large_image' | 'app' | 'player'} */
+  export let twitter_card = 'summary_large_image'
 
   /** "@username" for the website used in the card footer. */
-  export let twitter_site: `@${string}` | undefined = undefined
+  /** @type {`@${string}` | undefined} */
+  export let twitter_site = undefined
 
   /** "@username" for the content creator / author. */
-  export let twitter_creator: `@${string}` | undefined = undefined
+  /** @type {`@${string}` | undefined} */
+  export let twitter_creator = undefined
 
   /** Custom properties */
-  export let custom_properties: {
+  /** @type {{
     og?: Record<string, string>
-  } & Record<string, string> = {}
+  } & Record<string, string>} */
+  export let custom_properties = {}
 
   /** Custom names */
-  export let custom_names: {
+  /** @type {{
     twitter?: Record<string, string>
-  } & Record<string, string> = {}
+  } & Record<string, string>} */
+  export let custom_names = {}
 
   $: $store = {
     prefix
