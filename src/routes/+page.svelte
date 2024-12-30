@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { page } from '$app/stores'
-  import { Highlight, HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
-  import { javascript, xml } from '@jill64/npm-demo-layout/highlight/languages'
+  import { page } from '$app/state'
+  import { Highlight, HighlightSvelte } from 'svelte-highlight'
+  import { javascript, xml } from 'svelte-highlight/languages'
   import { code } from './code'
 
-  $: sample = code($page.url)
+  let sample = $derived(code(page.url))
 </script>
 
 Open DevTools and make sure OGP is set.

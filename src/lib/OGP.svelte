@@ -1,96 +1,102 @@
-<script>
-  import { page } from '$app/stores'
+<script lang="ts">
+  import { page } from '$app/state'
   import { SvelteHTML } from '@jill64/svelte-html'
-  import { store } from './store'
+  import { store } from './store.svelte'
   import { serialize } from './utils/serialize'
 
-  // https://ogp.me
+  let {
+    prefix = 'og: https://ogp.me/ns#',
+    title,
+    type = 'website',
+    image,
+    url = page.url.href,
+    description,
+    site_name,
+    twitter_card = 'summary_large_image',
+    twitter_site = undefined,
+    twitter_creator = undefined,
+    custom_properties = {},
+    custom_names = {}
+  }: {
+    // https://ogp.me
+    prefix?: string
 
-  export let prefix = 'og: https://ogp.me/ns#'
+    // https://ogp.me/#metadata
 
-  // https://ogp.me/#metadata
+    /** The title of your object as it should appear within the graph */
+    title: string
 
-  /** The title of your object as it should appear within the graph */
-  /** @type {string} */
-  export let title
+    /**
+     * The type of your object.
+     * Depending on the type you specify, other properties may also be required.
+     * @see https://ogp.me/#types
+     * @default 'website'
+     */
+    type?: string
 
-  /**
-   * The type of your object.
-   * Depending on the type you specify, other properties may also be required.
-   * @see https://ogp.me/#types
-   * @default 'website'
-   */
-  export let type = 'website'
+    /** An image URL which should represent your object within the graph. */
+    /** @type {string} */
+    image: string
 
-  /** An image URL which should represent your object within the graph. */
-  /** @type {string} */
-  export let image
+    /**
+     * The canonical URL of your object that will be used as its permanent ID in the graph.
+     * @default page.url.href
+     */
+    url?: string | undefined
 
-  /**
-   * The canonical URL of your object that will be used as its permanent ID in the graph.
-   * @default $page.url.href
-   */
-  /** @type {string | undefined} */
-  export let url = undefined
+    // https://ogp.me/#optional
 
-  // https://ogp.me/#optional
+    /** A one to two sentence description of your object. */
+    description: string
 
-  /** A one to two sentence description of your object. */
-  /** @type {string} */
-  export let description
+    /** If your object is part of a larger web site, the name which should be displayed for the overall site.  */
 
-  /** If your object is part of a larger web site, the name which should be displayed for the overall site.  */
-  /** @type {string} */
-  export let site_name
+    site_name: string
 
-  // Twitter Cards
-  // https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
+    // Twitter Cards
+    // https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started
 
-  /**
-   * The card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
-   * @default 'summary_large_image'
-   */
-  /** @type {'summary' | 'summary_large_image' | 'app' | 'player'} */
-  export let twitter_card = 'summary_large_image'
+    /**
+     * The card type, which will be one of “summary”, “summary_large_image”, “app”, or “player”.
+     * @default 'summary_large_image'
+     */
+    twitter_card?: 'summary' | 'summary_large_image' | 'app' | 'player'
 
-  /** "@username" for the website used in the card footer. */
-  /** @type {`@${string}` | undefined} */
-  export let twitter_site = undefined
+    /** "@username" for the website used in the card footer. */
+    twitter_site?: `@${string}` | undefined
 
-  /** "@username" for the content creator / author. */
-  /** @type {`@${string}` | undefined} */
-  export let twitter_creator = undefined
+    /** "@username" for the content creator / author. */
+    twitter_creator?: `@${string}` | undefined
 
-  /** Custom properties */
-  /** @type {{
-    og?: Record<string, string>
-  } & Record<string, string>} */
-  export let custom_properties = {}
+    /** Custom properties */
+    custom_properties?: {
+      og?: Record<string, string>
+    } & Record<string, string>
 
-  /** Custom names */
-  /** @type {{
-    twitter?: Record<string, string>
-  } & Record<string, string>} */
-  export let custom_names = {}
+    /** Custom names */
+    custom_names?: {
+      twitter?: Record<string, string>
+    } & Record<string, string>
+  } = $props()
 
-  $: $store = {
-    prefix
-  }
+  $effect(() => {
+    store.prefix = prefix
+  })
 
-  $: properties = {
+  let properties = $derived({
     ...custom_properties,
     og: {
       title,
       type,
-      image: (image.startsWith('/') ? $page.url.origin : '') + image,
-      url: url || $page.url.href,
+      image: (image.startsWith('/') ? page.url.origin : '') + image,
+      url: url || page.url.href,
       description,
       site_name,
       ...custom_properties.og
     }
-  }
+  })
 
-  $: names = {
+  let names = $derived({
     ...custom_names,
     twitter: {
       card: twitter_card,
@@ -98,7 +104,7 @@
       creator: twitter_creator,
       ...custom_names.twitter
     }
-  }
+  })
 </script>
 
 <SvelteHTML {prefix} />
