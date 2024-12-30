@@ -5,10 +5,7 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter(),
-    alias: {
-      '@jill64/svelte-ogp': './dist/index.js'
-    }
+    adapter: adapter()
   }
 }
 

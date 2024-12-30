@@ -1,6 +1,6 @@
 {
   "name": "@jill64/svelte-ogp",
-  "version": "1.2.2",
+  "version": "2.0.0",
   "description": "🖼️ Quick OGP configuration for SvelteKit",
   "main": "dist/index.js",
   "type": "module",
@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-ogp.git",
-    "image": "https://opengraph.githubassets.com/be71fb25a9498c4d9d987881cf73231b9f95dad11e3ab76de4de0da4aec4b5ba/jill64/svelte-ogp"
+    "image": "https://opengraph.githubassets.com/3ba3fe748e4bd0bef9343b0d3f3cc784ec26136b0e2d600761e34b96c7445b20/jill64/svelte-ogp"
   },
   "publishConfig": {
     "access": "public"
@@ -38,14 +38,14 @@
     "sveltekit"
   ],
   "scripts": {
-    "dev": "npm run package && vite dev",
-    "build": "npm run package && vite build",
+    "dev": "vite dev",
+    "build": "vite build",
     "preview": "npm run build && vite preview",
     "prepack": "npm run build",
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "check": "svelte-kit sync && npx svelte-check",
     "lint": "npm run check && npx eslint .",
-    "format": "npx @jill64/psx",
+    "format": "npx psvx",
     "test": "vitest",
     "test:e2e": "playwright test"
   },
@@ -56,7 +56,9 @@
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/eslint-config-svelte": "2.0.1",
-    "@jill64/npm-demo-layout": "1.0.249",
+    "@jill64/svelte-dark-theme": "5.0.0",
+    "svelte-highlight": "7.8.2",
+    "svelte-highlight-switcher": "1.3.3",
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
