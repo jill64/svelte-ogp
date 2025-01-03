@@ -27,7 +27,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-ogp.git",
-    "image": "https://opengraph.githubassets.com/cc1b535d6380290e2fa25269b143174793f99dfbf636bec0ebfc466328f41678/jill64/svelte-ogp"
+    "image": "https://opengraph.githubassets.com/0ca1a16a7754a6c2ec0bc39dbba3cd084b65bd286ea368f03012f35d3d5d40c0/jill64/svelte-ogp"
   },
   "publishConfig": {
     "access": "public"
@@ -68,7 +68,7 @@
     "@sveltejs/kit": "2.15.1",
     "svelte": "5.16.0",
     "typescript": "5.7.2",
-    "vite": "6.0.6",
+    "vite": "6.0.7",
     "vitest": "2.1.8",
     "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
