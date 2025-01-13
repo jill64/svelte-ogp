@@ -55,7 +55,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/eslint-config-svelte": "2.0.3",
+    "@jill64/eslint-config-svelte": "2.0.4",
     "@jill64/svelte-dark-theme": "5.1.1",
     "svelte-highlight": "7.8.2",
     "svelte-highlight-switcher": "1.3.3",
