@@ -49,8 +49,8 @@ importers:
         specifier: 7.8.2
         version: 7.8.2
       svelte-highlight-switcher:
-        specifier: 1.3.4
-        version: 1.3.4(svelte-highlight@7.8.2)(svelte@5.16.1)
+        specifier: 1.3.5
+        version: 1.3.5(svelte-highlight@7.8.2)(svelte@5.16.1)
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -1755,8 +1755,8 @@ packages:
   svelte-feather-icons@4.2.0:
     resolution: {integrity: sha512-KuMTDrL6sA8aCxBv3RMgmmnnyIaAXaYcmWkmNa2r2Qj70vi+An2T6ZBAdiZr6wjx+a3eZJy+FRseeRkzQFGHPw==}
 
-  svelte-highlight-switcher@1.3.4:
-    resolution: {integrity: sha512-LBniWlLvebMs6WerJYfQqo7LUhZ73IA7udKvM+HN5VkHWVkl5jnFWuzrXhGC0cneB3Sz3E860hQiObcP7LhM/w==}
+  svelte-highlight-switcher@1.3.5:
+    resolution: {integrity: sha512-ezKStlljpiLsuVcU1x271/861eRrnQjjmys54V8QdPM9ODs9IDITy/tfiV/O6gfcciqjbJK4YQVRA59uJXukIw==}
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
       svelte-highlight: ^7.4.6
@@ -3568,7 +3568,7 @@ snapshots:
     dependencies:
       svelte: 3.59.2
 
-  svelte-highlight-switcher@1.3.4(svelte-highlight@7.8.2)(svelte@5.16.1):
+  svelte-highlight-switcher@1.3.5(svelte-highlight@7.8.2)(svelte@5.16.1):
     dependencies:
       svelte: 5.16.1
       svelte-highlight: 7.8.2
