@@ -109,10 +109,10 @@
 
 <SvelteHTML {prefix} />
 <svelte:head>
-  {#each serialize(properties) as [property, content]}
+  {#each serialize(properties) as [property, content], index (index)}
     <meta {property} {content} />
   {/each}
-  {#each serialize(names) as [name, content]}
+  {#each serialize(names) as [name, content], index (index)}
     <meta {name} {content} />
   {/each}
 </svelte:head>
