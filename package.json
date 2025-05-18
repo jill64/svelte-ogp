@@ -72,6 +72,6 @@
     "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
-    "@jill64/svelte-html": "2.0.0"
+    "@jill64/svelte-html": "2.0.1"
   }
 }
