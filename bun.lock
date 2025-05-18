@@ -4,7 +4,7 @@
     "": {
       "name": "@jill64/svelte-ogp",
       "dependencies": {
-        "@jill64/svelte-html": "2.0.0",
+        "@jill64/svelte-html": "2.0.1",
       },
       "devDependencies": {
         "@jill64/eslint-config-svelte": "2.2.5",
@@ -184,7 +184,7 @@
 
     "@jill64/svelte-device-theme": ["@jill64/svelte-device-theme@2.0.2", "", { "dependencies": { "svelte-mq-store": "3.0.0" }, "peerDependencies": { "svelte": "^5.0.0" } }, "sha512-ahLuNmBkCFhDox+hWrbN7SL9TnbM0fTs3vwNBfvb++1eIRcF8gdK/Avrxfld22+2HWnwXrOxKoDtm/0KbFcGDg=="],
 
-    "@jill64/svelte-html": ["@jill64/svelte-html@2.0.0", "", { "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-9B1WV8IgABlLxIH+X6dIZZKD2szEVnXryl9xeXHuVlP9ygSTVbP7X2B3KN/yQPEe2nUmi0ersDrfyySo7hdr6Q=="],
+    "@jill64/svelte-html": ["@jill64/svelte-html@2.0.1", "", { "peerDependencies": { "@sveltejs/kit": "^2.20.6", "svelte": "^5.0.0" } }, "sha512-YAqTIRxbcxLfuKPMfQyv0wIRAkr/YMgICs9hmtwbYfrSwKwxdyanr1O2njd03YhFI3zAVFok3yBf1nVSBpsALw=="],
 
     "@jill64/svelte-storage": ["@jill64/svelte-storage@2.0.0", "", { "dependencies": { "@jill64/typed-storage": "3.1.5" }, "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-hOQPKxtTOTDNB7+4mz4rViNTUWB/1dUogpkG7BEuNnhRJwH/1+ZEFIuQWFxLwCpoj/9/ZCjoUKss4qL7B8P4Yg=="],
 
@@ -679,6 +679,8 @@
     "@eslint-community/eslint-utils/eslint-visitor-keys": ["eslint-visitor-keys@3.4.3", "", {}, "sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag=="],
 
     "@humanfs/node/@humanwhocodes/retry": ["@humanwhocodes/retry@0.3.1", "", {}, "sha512-JBxkERygn7Bv/GbN5Rv8Ul6LVknS+5Bp6RgDC/O8gEBU/yeH5Ui5C/OlWrTb6qct7LjjfT6Re2NxB0ln0yYybA=="],
+
+    "@jill64/svelte-dark-theme/@jill64/svelte-html": ["@jill64/svelte-html@2.0.0", "", { "peerDependencies": { "@sveltejs/kit": "^2.0.0", "svelte": "^5.0.0" } }, "sha512-9B1WV8IgABlLxIH+X6dIZZKD2szEVnXryl9xeXHuVlP9ygSTVbP7X2B3KN/yQPEe2nUmi0ersDrfyySo7hdr6Q=="],
 
     "@jill64/typed-storage/ts-serde": ["ts-serde@1.0.8", "", { "dependencies": { "devalue": "5.1.1" } }, "sha512-YUBuQDm5uIpCIklGrU0by8uf4ZLBkIO1/mf7Gha83qn2iz54p/pmlXQanTaQZBSWB0EiJKQUo/ur72XvQpStAQ=="],
 
